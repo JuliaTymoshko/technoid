@@ -1,0 +1,25 @@
+$bp-large: 1920px;
+$bp-screen: 1400px;
+$bp-desktop: 1024px;
+$bp-tablet: 768px;
+$bp-phone: 480px;
+$bp-small: 320px;
+
+// ! Media example
+// @media (max-width: $bp-tablet) {
+//   flex-direction: column;
+// }
+
+///
+/// @example scss - Interval for pixels is defined as `1` by default
+//
+///  @media (min-width: 129px) {}
+///
+/// @example scss - Interval for ems is defined as `0.01` by default
+
+///  @media (min-width: 20.01em) {}
+///
+/// @example scss - Interval for rems is defined as `0.1` by default, to be used with `font-size: 62.5%;`
+///
+///  @media (min-width: 2.1rem) {}
+///

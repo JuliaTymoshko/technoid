@@ -1,0 +1,22 @@
+// ! Usage @import 'styles/variables.scss';
+
+// ! Colors
+$c-white: #ffffff;
+$c-black: #000000;
+$c-grey: #9d9d9d;
+
+// ! FontSize
+$fs-h1: 28px; // heading - health overview
+$fs-h2: 22px; // BMI calc
+$fs-h3: 20px; // water tracker, upcoming stuff
+$fs-h4: 18px;
+$fs-base: 16px;
+$fs-small: 14px;
+
+// Fonts variables
+$ff-main: 'Poppins', sans-serif;
+$ff-secondary: 'Mulish', sans-serif;
+
+// FontWeight
+$fw-normal: 400;
+$fw-bold: 600;
