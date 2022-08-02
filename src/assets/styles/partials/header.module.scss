@@ -1,0 +1,98 @@
+@import './../../styles/base/mixins.scss';
+@import './../../styles/base/media.scss';
+@import './../../styles/base/variables.scss';
+
+.headerWapper {
+  background-color: $c-white;
+  z-index: 99;
+  border: 1px solid $c-orange;
+  border-top: 1px solid $c-white;
+  @include flexRow;
+  @include absoluteTop;
+  padding: 10px 30px;
+  white-space: nowrap;
+  gap: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.active {
+  color: $c-orange;
+  transition: $t-normal;
+}
+
+.link {
+  position: relative;
+  color: $c-black;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: $c-orange;
+    transform-origin: bottom right;
+    transition: transform $t-normal;
+  }
+
+  &:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.logo {
+  margin-right: 30px;
+  max-height: 50px;
+  z-index: 100;
+
+  // @media (max-width: $bp-phone) {
+  //   margin-right: 100px;
+  // }
+}
+
+.navigation {
+  @include flexRow;
+  gap: 70px;
+
+  @media (max-width: $bp-tablet) {
+    gap: 40px;
+  }
+
+  @media (max-width: $bp-phone) {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+
+  @media (max-width: $bp-phone) {
+    display: block;
+    transform: rotate(90deg);
+    font-size: $fs-h1;
+    cursor: pointer;
+
+    ::selection {
+      background-color: transparent;
+    }
+  }
+}
+
+.accuntIconWrap {
+  @include flexRow;
+  justify-content: center;
+  background-color: rgb(180, 180, 180);
+  border-radius: 50%;
+  max-width: 30px;
+  max-height: 30px;
+}
+
+.accuntIcon {
+  font-size: $fs-h1;
+  cursor: pointer;
+  color: $c-grey;
+  transition: $t-normal;
+}

@@ -4,6 +4,9 @@
 $c-white: #ffffff;
 $c-black: #000000;
 $c-grey: #9d9d9d;
+$c-blue: #2b30c0;
+$c-violet-light: #dce1fd;
+$c-orange: #f37555;
 
 // ! FontSize
 $fs-h1: 28px; // heading - health overview
@@ -15,8 +18,11 @@ $fs-small: 14px;
 
 // Fonts variables
 $ff-main: 'Poppins', sans-serif;
-$ff-secondary: 'Mulish', sans-serif;
 
 // FontWeight
 $fw-normal: 400;
 $fw-bold: 600;
+
+// FontWeight
+$t-normal: 0.25s ease-out;
+$t-long: 2s ease-out;

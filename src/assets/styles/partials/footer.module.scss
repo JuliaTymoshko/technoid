@@ -1,0 +1,71 @@
+@import './../../styles/base/mixins.scss';
+@import './../../styles/base/media.scss';
+@import './../../styles/base/variables.scss';
+
+.footer {
+  background-color: $c-violet-light;
+  @include absoluteBottom;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 40px 30px;
+  gap: 30px;
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  @media (max-width: $bp-phone) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px 15px;
+  }
+}
+
+.footerBlock {
+  max-width: 800px;
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 30px;
+
+  @media (max-width: $bp-tablet) {
+    gap: 15px;
+  }
+}
+
+.footerSubBlock {
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  span {
+    position: relative;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: $c-blue;
+      transform-origin: bottom right;
+      transition: transform $t-normal;
+    }
+
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
+
+.footerInput {
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  border-radius: 8px;
+}

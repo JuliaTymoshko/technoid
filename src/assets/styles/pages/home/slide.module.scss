@@ -1,0 +1,21 @@
+@import 'assets/styles/base/variables.scss';
+
+.slide {
+  text-align: center;
+  position: relative;
+}
+
+.slideImage {
+  height: 50vh;
+  width: auto;
+}
+
+.slideButton {
+  background-color: red;
+  border-radius: 8px;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  min-width: fit-content;
+  color: $c-white;
+}
