@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from 'assets/images/logo.svg';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import avatar from 'assets/images/avatar.jpg';
-import BurgerMenu from './BurgerMenu';
+import MobileMenu from './MobileMenu';
 
 const Header = () => {
   const [display, setDisplay] = useState(false);
@@ -67,7 +67,7 @@ const Header = () => {
           <span>|||</span>
         </div>
       </div>
-      <div>{display ? <BurgerMenu close={hideModal} /> : null}</div>
+      <div>{display ? <MobileMenu close={hideModal} /> : null}</div>
     </header>
   );
 };

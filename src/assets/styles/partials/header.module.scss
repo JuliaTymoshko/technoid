@@ -8,7 +8,7 @@
   border: 1px solid $c-orange;
   border-top: 1px solid $c-white;
   @include flexRow;
-  @include absoluteTop;
+  @include header;
   padding: 10px 30px;
   white-space: nowrap;
   gap: 20px;

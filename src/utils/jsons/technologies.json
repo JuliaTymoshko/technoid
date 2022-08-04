@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "url": "https://pngimg.com/uploads/android_logo/android_logo_PNG8.png",
+    "title": "Android"
+  },
+  {
+    "id": 2,
+    "url": "https://cdn-icons-png.flaticon.com/512/919/919826.png",
+    "title": "CSS"
+  },
+  {
+    "id": 3,
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+    "title": "HTML"
+  },
+  {
+    "id": 4,
+    "url": "https://www.pngplay.com/wp-content/uploads/9/Java-PNG-Clipart-Background.png",
+    "title": "JAVA"
+  },
+  {
+    "id": 5,
+    "url": "https://i.pinimg.com/originals/a4/e4/40/a4e4404d8de09a68b24ebcfc42317f0a.png",
+    "title": "Odoo"
+  },
+  {
+    "id": 6,
+    "url": "https://iconape.com/wp-content/png_logo_vector/flutter.png",
+    "title": "Flutter"
+  },
+  {
+    "id": 7,
+    "url": "https://www.pngkey.com/png/full/119-1194431_woocommerce-icon-wordpress-woocommerce.png",
+    "title": "Woo Commerce"
+  },
+  {
+    "id": 8,
+    "url": "https://ubiqum.com/assets/uploads/2021/11/full-stack-developer-mern-1024x1024.png",
+    "title": "MERN stack"
+  },
+  {
+    "id": 9,
+    "url": "https://codingthesmartway.com/wp-content/uploads/2018/06/mean_logo.png",
+    "title": "MEAN stack"
+  },
+  {
+    "id": 10,
+    "url": "https://robusttechhouse.com/wp-content/uploads/2015/07/magento.png",
+    "title": "Magento"
+  }
+]

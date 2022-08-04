@@ -1,9 +1,9 @@
 import classNames from 'classnames';
-import styles from 'assets/styles/partials/burgerMenu.module.scss';
+import styles from 'assets/styles/partials/mobileMenu.module.scss';
 import navStyles from 'assets/styles/partials/header.module.scss';
 import { NavLink } from 'react-router-dom';
 
-const BurgerMenu = ({ close }) => {
+const MobileMenu = ({ close }) => {
   return (
     <div className={classNames(styles.modal)}>
       <div className={classNames(styles.modalDialog)}>
@@ -62,4 +62,4 @@ const BurgerMenu = ({ close }) => {
   );
 };
 
-export default BurgerMenu;
+export default MobileMenu;

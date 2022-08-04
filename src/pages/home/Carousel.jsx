@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import styles from 'assets/styles/pages/home/carousel.module.scss';
 
 // ! Import swiper
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // ! Import styles for swiper
@@ -27,7 +27,7 @@ const Carousel = () => {
               slidesPerView={1}
               onSlideChange={() => console.log('slide change')}
               onSwiper={(swiper) => console.log(swiper)}
-              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
               loop={true}
               autoplay={{ delay: 3000 }}
               pagination={{ clickable: true }}

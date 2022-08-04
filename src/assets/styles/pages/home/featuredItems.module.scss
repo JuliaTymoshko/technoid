@@ -1,0 +1,37 @@
+@import 'assets/styles/base/mixins.scss';
+@import 'assets/styles/base/media.scss';
+
+.featuredItems {
+  // @include flexColumn;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-bottom: 120px;
+
+  @media (max-width: $bp-tablet) {
+    gap: 70px;
+  }
+
+  @media (max-width: $bp-phone) {
+    gap: 50px;
+  }
+}
+
+.cardsWrapper {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+
+  @media (max-width: $bp-desktop) {
+    gap: 30px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $bp-phone) {
+    grid-template-columns: 1fr;
+  }
+}

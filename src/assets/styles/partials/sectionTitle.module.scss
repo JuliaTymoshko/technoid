@@ -1,9 +1,10 @@
 @import 'assets/styles/base/variables.scss';
+@import 'assets/styles/base/media.scss';
 
 .sectionTitle {
   text-align: center;
   text-transform: uppercase;
-  padding: 3px 0;
+  line-height: 1.25;
 }
 
 .title {
@@ -21,6 +22,14 @@
 .underline {
   height: 3px;
   margin: 0 auto;
-  background-color: $c-blue;
+  background-color: $c-orange;
   max-width: 300px;
+
+  @media (max-width: $bp-tablet) {
+    max-width: 200px;
+  }
+
+  @media (max-width: $bp-phone) {
+    max-width: 150px;
+  }
 }
