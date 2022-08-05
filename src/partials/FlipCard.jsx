@@ -31,7 +31,7 @@ const FlipCard = ({ title, description, imageSRC }) => {
                 component="img"
                 height="180"
                 image={imageSRC}
-                alt="green iguana"
+                alt={title}
               />
               <CardContent>
                 <Typography

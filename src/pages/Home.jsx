@@ -6,7 +6,7 @@ import Sponsors from './home/Sponsors';
 const Home = () => {
   return (
     <div>
-      {/* <Carousel /> */}
+      <Carousel />
       <Sponsors />
       <FeaturedItems />
       <GetInTouch />

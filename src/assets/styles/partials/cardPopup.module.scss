@@ -43,23 +43,3 @@
   gap: 25px;
   text-align: justify;
 }
-
-.closeButton {
-  background-color: $c-blue;
-  color: $c-white;
-  padding: 8px 16px;
-  border-radius: 8px;
-  @include flexRow;
-  width: fit-content;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  transition: $t-normal;
-
-  &:focus,
-  &:hover {
-    color: $c-black;
-    opacity: 0.9;
-    background-color: $c-violet;
-  }
-}

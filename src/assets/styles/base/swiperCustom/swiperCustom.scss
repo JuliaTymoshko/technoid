@@ -1,4 +1,21 @@
-.swiperCustomWrap {
-  width: 100%;
-  text-align: center;
+.customSwiperWrap {
+  .swiper-pagination-bullet {
+    border: 2px solid $c-white;
+    background: transparent;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $c-white;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      color: $c-white;
+    }
+
+    @media (max-width: $bp-phone) {
+      display: none;
+    }
+  }
 }

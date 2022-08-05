@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "url": "https://www.hrhelpboard.com/uploaded_files/banner_file/recruitment.jpg",
-    "title": "Some Title",
+    "url": "https://i.imgur.com/A0zD3lO.png",
+    "title": "Las Vegas Business Plan",
     "description": "Some description about the slide and it needs to be minimum of 75 chars",
-    "btnText": "click"
+    "btnText": "See more"
   },
   {
     "id": 2,
-    "url": "https://thrivemyway.com/wp-content/uploads/2021/12/Recruitment-Statistics.jpg",
-    "title": "Some Title",
+    "url": "https://en.blog.businessdecision.com/wp-content/uploads/2021/05/Become-a-Data-Centric-Company-Webinar.png",
+    "title": "7 Reasons Why your Analytics may not deliver ROI",
     "description": "Some description about the slide and it needs to be minimum of 75 chars",
-    "btnText": "click"
+    "btnText": "See more"
   },
   {
     "id": 3,
     "url": "https://rinarecruitment.ro/wp-content/uploads/2021/12/Rina-Recruitment-Services-Romania-scaled.jpg",
-    "title": "Some Title",
+    "title": "The GDPR and right to be forgotten!",
     "description": "Some description about the slide and it needs to be minimum of 75 chars",
-    "btnText": "click"
+    "btnText": "See more"
   }
 ]

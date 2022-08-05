@@ -13,7 +13,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 // formik & validation
 import { useFormik } from 'formik';
-import { validationSchema } from 'utils/validation';
+import { validationSchema } from 'utils/validation/validation';
 import CardPopup from 'partials/CardPopup';
 
 const GetInTouch = () => {

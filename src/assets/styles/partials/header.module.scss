@@ -14,42 +14,11 @@
   border-radius: 0 0 8px 8px;
 }
 
-.active {
-  color: $c-orange;
-  transition: $t-normal;
-}
-
-.link {
-  position: relative;
-  color: $c-black;
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: $c-orange;
-    transform-origin: bottom right;
-    transition: transform $t-normal;
-  }
-
-  &:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-}
-
 .logo {
   margin-right: 30px;
   max-height: 50px;
   z-index: 100;
-
-  // @media (max-width: $bp-phone) {
-  //   margin-right: 100px;
-  // }
+  cursor: pointer;
 }
 
 .navigation {

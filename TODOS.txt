@@ -1,12 +1,14 @@
-10. combine all sorting
-
+3. fix toggling  of ASC and DES
+4. вынести отдельно функцию по сортировке
+5. вынести отдельно в константу стили для инпута
 
 2. Page should have pagination (optional, adding infinite scroll is an added advantage)
-3.  skeleton loader (optional, it’s an added advantage.)
-4.  swiper
+3.  skeleton loader (optional, it’s an added advantage.) - https://mui.com/material-ui/react-skeleton/
 5.  login form 
 6.  app context
 7.  edit data (PUT request)
 
-12. настроить ссылки в футере (navLink, targetBlank etc)
-13. скролл должен подниматься вверх
+16. проверить SEO
+17. как оптимизировать картинки при загрузке реакт? 
+
+18. настроить поле Get news subscription!

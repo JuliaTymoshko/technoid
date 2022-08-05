@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import styles from 'assets/styles/partials/cardPopup.module.scss';
+import CustomButton from './CustomButton';
 
 const CardPopup = ({ close, title, imageSRC, description }) => {
   return (
@@ -14,12 +15,7 @@ const CardPopup = ({ close, title, imageSRC, description }) => {
             />
             <div className={classNames(styles.popupHeader)}>
               <h3>{title}</h3>
-              <button
-                className={classNames(styles.closeButton)}
-                onClick={() => close()}
-              >
-                x
-              </button>
+              <CustomButton buttonText="x" onClickHandler={() => close()} />
             </div>
             <div
               className={classNames(styles.popupBody)}
@@ -28,12 +24,10 @@ const CardPopup = ({ close, title, imageSRC, description }) => {
               }}
             >
               <p>{description}</p>
-              <button
-                className={classNames(styles.closeButton)}
-                onClick={() => close()}
-              >
-                Nice article, thanks!
-              </button>
+              <CustomButton
+                buttonText="Nice article, thanks!"
+                onClickHandler={() => close()}
+              />
             </div>
           </div>
         </div>

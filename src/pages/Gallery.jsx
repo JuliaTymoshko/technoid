@@ -1,12 +1,13 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import styles from 'assets/styles/pages/gallery/gallery.module.scss';
 
 import SectionTitle from 'partials/SectionTitle';
-import FlipCard from 'partials/FlipCard';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 import cards from 'utils/jsons/cards.json';
+
+import FlipCard from 'partials/FlipCard';
 
 import {
   FormControl,
@@ -23,102 +24,72 @@ import DateRangeIcon from '@mui/icons-material/DateRange';
 import FilterAltOffIcon from '@mui/icons-material/FilterAltOff';
 
 const Gallery = () => {
-  const [arrayToMap, setArrayToMap] = useState(cards);
-  const [titleValue, setTitleValue] = useState('');
-  const [inContentValue, setInContentValue] = useState('');
-  const [selectedItem, setSelectedItem] = useState('');
-  const [order, setOrder] = useState('');
-  const [timeOrder, setTimeOrder] = useState('');
+  const [cardsToMap, setCardsToMap] = useState(cards || []);
+  const [searchTitle, setSearchTitle] = useState('');
+  const [searchDescription, setSearchDescription] = useState('');
+  const [searchCategory, setSearchCategory] = useState('');
+  const [titleOrder, setTitleOrder] = useState('');
+  const [pubDateOrder, setPubDateOrder] = useState('asc');
   const matches = useMediaQuery('(max-width: 480px)');
 
-  const filterByCategory = (inpValue) => {
-    setSelectedItem(inpValue);
+  const handleChange = () => {
+    let allCards = cards;
 
-    if (titleValue !== '' || inContentValue !== '') {
-      setArrayToMap(arrayToMap.filter((card) => card.category === inpValue));
-    } else {
-      setArrayToMap(cards.filter((card) => card.category === inpValue));
-    }
-  };
-
-  const filterByTitle = (titleValue) => {
-    setTitleValue(titleValue);
-
-    if (selectedItem !== '' || inContentValue !== '') {
-      setArrayToMap(
-        arrayToMap.filter((card) =>
-          card.title.toLowerCase().includes(titleValue.toLowerCase())
-        )
-      );
-    } else {
-      setArrayToMap(
-        cards.filter((card) =>
-          card.title.toLowerCase().includes(titleValue.toLowerCase())
-        )
+    if (searchTitle !== '') {
+      allCards = allCards.filter((card) =>
+        card.title.toLowerCase().includes(searchTitle.toLowerCase().trim())
       );
     }
-  };
 
-  const filterByContent = (inContentValue) => {
-    setInContentValue(inContentValue);
-    if (selectedItem !== '' || titleValue !== '') {
-      setArrayToMap(
-        arrayToMap.filter((card) =>
-          card.description.toLowerCase().includes(inContentValue.toLowerCase())
-        )
-      );
-    } else {
-      setArrayToMap(
-        cards.filter((card) =>
-          card.description.toLowerCase().includes(inContentValue.toLowerCase())
-        )
+    if (searchDescription !== '') {
+      allCards = allCards.filter((card) =>
+        card.description
+          .toLowerCase()
+          .includes(searchDescription.toLowerCase().trim())
       );
     }
-  };
 
-  const filterByPublicationDate = () => {
-    setTimeOrder('asc');
-
-    if (timeOrder === 'asc') {
-      setArrayToMap(
-        [...arrayToMap].sort((a, b) =>
-          new Date(a.publicationDate) > new Date(b.publicationDate) ? -1 : 1
-        )
-      );
-      setTimeOrder('des');
-    } else {
-      setArrayToMap(
-        [...arrayToMap].sort((a, b) =>
-          new Date(a.publicationDate) > new Date(b.publicationDate) ? 1 : -1
-        )
-      );
-      setTimeOrder('asc');
+    if (searchCategory !== '') {
+      allCards = allCards.filter((card) => card.category === searchCategory);
     }
-  };
 
-  const sortAscAndDes = () => {
-    setOrder('asc');
-
-    if (order === 'asc') {
-      setArrayToMap(
-        [...arrayToMap].sort((a, b) => (a.title > b.title ? 1 : -1))
-      );
-      setOrder('des');
-    } else {
-      setArrayToMap(
-        [...arrayToMap].sort((a, b) => (a.title > b.title ? -1 : 1))
-      );
-      setOrder('asc');
+    if (titleOrder === 'asc') {
+      allCards = [...allCards].sort((a, b) => (a.title > b.title ? 1 : -1));
+    } else if (titleOrder === 'des') {
+      allCards = [...allCards].sort((a, b) => (a.title > b.title ? 1 : -1));
     }
+
+    if (pubDateOrder === 'asc') {
+      allCards = [...allCards].sort((a, b) =>
+        new Date(a.publicationDate) > new Date(b.publicationDate) ? -1 : 1
+      );
+    } else if (pubDateOrder === 'des') {
+      allCards = [...allCards].sort((a, b) =>
+        new Date(a.publicationDate) > new Date(b.publicationDate) ? 1 : -1
+      );
+    }
+
+    return allCards;
+    // setCardsToMap(allCards);
   };
+
+  useEffect(() => {
+    const newArr = handleChange();
+    setCardsToMap(newArr);
+  }, [
+    searchTitle,
+    searchDescription,
+    searchCategory,
+    titleOrder,
+    pubDateOrder,
+  ]);
 
   const clearAllFilters = () => {
-    setArrayToMap(cards);
-    setTitleValue('');
-    setInContentValue('');
-    setSelectedItem('');
-    setOrder('');
-    setTimeOrder('');
+    setSearchTitle('');
+    setSearchDescription('');
+    setSearchCategory('');
+    setTitleOrder('');
+    setPubDateOrder('asc');
   };
 
   return (
@@ -140,8 +111,10 @@ const Gallery = () => {
             label="Search by title"
             name="titleSearch"
             id="titleSearch"
-            value={titleValue}
-            onChange={(e) => filterByTitle(e.target.value)}
+            value={searchTitle}
+            onChange={(e) => {
+              setSearchTitle(e.target.value);
+            }}
             InputProps={{
               endAdornment: (
                 <IconButton onClick={() => console.log('helow')} edge="end">
@@ -158,14 +131,13 @@ const Gallery = () => {
             label="Phrase match"
             name="inArticleSearch"
             id="inArticleSearch"
-            value={inContentValue}
-            onChange={(e) => filterByContent(e.target.value)}
+            value={searchDescription}
+            onChange={(e) => {
+              setSearchDescription(e.target.value);
+            }}
             InputProps={{
               endAdornment: (
-                <IconButton
-                  onClick={() => console.log('helow from inArticleSearch')}
-                  edge="end"
-                >
+                <IconButton onClick={() => {}} edge="end">
                   <SearchIcon />
                 </IconButton>
               ),
@@ -181,11 +153,16 @@ const Gallery = () => {
           >
             <InputLabel id="demo-simple-select-label">Category</InputLabel>
             <Select
+              MenuProps={{
+                disableScrollLock: true,
+              }}
               labelId="category"
               id="category"
               label="category"
-              value={selectedItem}
-              onChange={(e) => filterByCategory(e.target.value)}
+              value={searchCategory}
+              onChange={(e) => {
+                setSearchCategory(e.target.value);
+              }}
             >
               <MenuItem value={'Recruitment'}>Recruitment</MenuItem>
               <MenuItem value={'Business'}>Business</MenuItem>
@@ -193,11 +170,31 @@ const Gallery = () => {
             </Select>
           </FormControl>
 
-          <IconButton edge="end" onClick={() => filterByPublicationDate()}>
+          <IconButton
+            edge="end"
+            onClick={() => {
+              console.log('am here calendar');
+              setTitleOrder('');
+              pubDateOrder === 'asc'
+                ? setPubDateOrder('asc')
+                : setPubDateOrder('des');
+            }}
+          >
             <DateRangeIcon />
           </IconButton>
 
-          <IconButton onClick={() => sortAscAndDes()} edge="end">
+          <IconButton
+            onClick={() => {
+              console.log('am here SortByAlphaIcon');
+              setPubDateOrder('');
+              if (titleOrder === 'des') {
+                setTitleOrder('asc');
+              } else {
+                setTitleOrder('des');
+              }
+            }}
+            edge="end"
+          >
             <SortByAlphaIcon />
           </IconButton>
 
@@ -206,10 +203,8 @@ const Gallery = () => {
           </IconButton>
         </div>
       </div>
-
       <div className={classNames(styles.galleryImages)}>
-        {/* {sortedCards && */}
-        {arrayToMap.map((card, i) => {
+        {cardsToMap.map((card) => {
           return (
             <FlipCard
               key={card.id}

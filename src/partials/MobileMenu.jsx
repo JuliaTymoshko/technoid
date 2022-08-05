@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import styles from 'assets/styles/partials/mobileMenu.module.scss';
-import navStyles from 'assets/styles/partials/header.module.scss';
-import { NavLink } from 'react-router-dom';
+import NavigationLink from './NavigationLink';
 
 const MobileMenu = ({ close }) => {
   return (
@@ -21,37 +20,19 @@ const MobileMenu = ({ close }) => {
             <nav>
               <ul className={classNames(styles.modalBody)}>
                 <li>
-                  <NavLink
-                    className={({ isActive }) =>
-                      isActive ? navStyles.active : navStyles.link
-                    }
-                    to="/"
-                    onClick={() => close()}
-                  >
-                    Home
-                  </NavLink>
+                  <NavigationLink navigateToValue="/" navigateName="Home" />
                 </li>
                 <li>
-                  <NavLink
-                    onClick={() => close()}
-                    className={({ isActive }) =>
-                      isActive ? navStyles.active : navStyles.link
-                    }
-                    to="Gallery"
-                  >
-                    Gallery
-                  </NavLink>
+                  <NavigationLink
+                    navigateToValue="gallery"
+                    navigateName="Gallery"
+                  />
                 </li>
                 <li>
-                  <NavLink
-                    onClick={() => close()}
-                    className={({ isActive }) =>
-                      isActive ? navStyles.active : navStyles.link
-                    }
-                    to="Profile"
-                  >
-                    Profile
-                  </NavLink>
+                  <NavigationLink
+                    navigateToValue="profile"
+                    navigateName="Profile"
+                  />
                 </li>
               </ul>
             </nav>

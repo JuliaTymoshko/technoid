@@ -20,7 +20,6 @@ const Sponsors = () => {
           spaceBetween={50}
           loop={true}
           autoplay={{ delay: 1500 }}
-          className="swiperCustomWrap"
           breakpoints={{
             320: {
               slidesPerView: 3,

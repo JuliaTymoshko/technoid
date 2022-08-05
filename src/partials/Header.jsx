@@ -1,11 +1,11 @@
 import classNames from 'classnames';
 import { useState } from 'react';
 import styles from 'assets/styles/partials/header.module.scss';
-import { NavLink } from 'react-router-dom';
 import { ReactComponent as Logo } from 'assets/images/logo.svg';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import avatar from 'assets/images/avatar.jpg';
 import MobileMenu from './MobileMenu';
+import NavigationLink from './NavigationLink';
 
 const Header = () => {
   const [display, setDisplay] = useState(false);
@@ -17,38 +17,26 @@ const Header = () => {
   return (
     <header>
       <div className={classNames(styles.headerWapper)}>
-        <Logo className={classNames(styles.logo)} />
+        <Logo
+          className={classNames(styles.logo)}
+          onClick={() => window.location.reload(false)}
+        />
         <nav>
           <ul className={classNames(styles.navigation)}>
             <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? styles.active : styles.link
-                }
-                to="/"
-              >
-                Home
-              </NavLink>
+              <NavigationLink navigateToValue="/" navigateName="Home" />
             </li>
             <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? styles.active : styles.link
-                }
-                to="Gallery"
-              >
-                Gallery
-              </NavLink>
+              <NavigationLink
+                navigateToValue="gallery"
+                navigateName="Gallery"
+              />
             </li>
             <li>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? styles.active : styles.link
-                }
-                to="Profile"
-              >
-                Profile
-              </NavLink>
+              <NavigationLink
+                navigateToValue="profile"
+                navigateName="Profile"
+              />
             </li>
             <div>
               {/* <AccountCircleIcon className={classNames(styles.accuntIcon)} /> */}
