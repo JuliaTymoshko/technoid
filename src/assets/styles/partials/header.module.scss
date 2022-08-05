@@ -5,8 +5,7 @@
 .headerWapper {
   background-color: $c-white;
   z-index: 99;
-  border: 1px solid $c-orange;
-  border-top: 1px solid $c-white;
+  box-shadow: $shadow-normal;
   @include flexRow;
   @include header;
   padding: 10px 30px;

@@ -1,0 +1,12 @@
+10. combine all sorting
+
+
+2. Page should have pagination (optional, adding infinite scroll is an added advantage)
+3.  skeleton loader (optional, it’s an added advantage.)
+4.  swiper
+5.  login form 
+6.  app context
+7.  edit data (PUT request)
+
+12. настроить ссылки в футере (navLink, targetBlank etc)
+13. скролл должен подниматься вверх

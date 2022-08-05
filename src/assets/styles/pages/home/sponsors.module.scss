@@ -1,20 +1,5 @@
 @import 'assets/styles/base/media.scss';
 
-.sponsors {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin-bottom: 120px;
-
-  @media (max-width: $bp-tablet) {
-    gap: 70px;
-  }
-
-  @media (max-width: $bp-phone) {
-    gap: 50px;
-  }
-}
-
 .technologyImage {
   max-width: 60px;
   max-height: 70px;

@@ -1,0 +1,58 @@
+@import 'assets/styles/base/mixins.scss';
+@import 'assets/styles/base/media.scss';
+
+.gallery {
+  margin-bottom: 100px;
+
+  @media (max-width: $bp-tablet) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $bp-phone) {
+    margin-bottom: 60px;
+  }
+}
+
+.galleryImages {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+
+  @media (max-width: $bp-desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (max-width: $bp-tablet) {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $bp-phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallerySearchBar {
+  margin-bottom: 50px;
+  @include flexRow;
+  gap: 20px;
+
+  @media (max-width: $bp-tablet) {
+    @include flexColumn;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.fieldsWrapper {
+  @include flexRow;
+  gap: 20px;
+}
+
+.upperFieldsWrapper {
+  @media (max-width: $bp-phone) {
+    @include flexColumn;
+  }
+}

@@ -17,9 +17,9 @@
   max-width: 700px;
   position: fixed;
   top: 5vh;
-  left: 0;
+  left: 2vh;
   bottom: 5vh;
-  right: 0;
+  right: 2vh;
   margin: 0 auto;
   overflow: auto;
   line-height: 1.5;
@@ -47,7 +47,6 @@
 .closeButton {
   background-color: $c-blue;
   color: $c-white;
-  font-weight: $fw-bold;
   padding: 8px 16px;
   border-radius: 8px;
   @include flexRow;
@@ -61,5 +60,6 @@
   &:hover {
     color: $c-black;
     opacity: 0.9;
+    background-color: $c-violet;
   }
 }

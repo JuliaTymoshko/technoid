@@ -1,22 +1,6 @@
 @import 'assets/styles/base/mixins.scss';
 @import 'assets/styles/base/media.scss';
 
-.featuredItems {
-  // @include flexColumn;
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin-bottom: 120px;
-
-  @media (max-width: $bp-tablet) {
-    gap: 70px;
-  }
-
-  @media (max-width: $bp-phone) {
-    gap: 50px;
-  }
-}
-
 .cardsWrapper {
   display: grid;
   justify-items: center;

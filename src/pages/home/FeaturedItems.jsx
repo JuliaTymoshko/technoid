@@ -3,15 +3,17 @@ import styles from 'assets/styles/pages/home/featuredItems.module.scss';
 import SectionTitle from 'partials/SectionTitle';
 import FlipCard from 'partials/FlipCard';
 
+import cards from 'utils/jsons/cards.json';
+
 const FeaturedItems = () => {
   return (
     <section className={classNames(styles.featuredItems)}>
       <SectionTitle title="Our" highlightedText="blog's" />
       <div className={classNames(styles.cardsWrapper)}>
         <FlipCard
-          imageSRC="https://img.freepik.com/premium-photo/businessman-draw-growth-graph-and-progress-of-business-and-analyzing-financial_34200-419.jpg?w=2000"
-          title="How can a stuffing solution company help your business?"
-          description="IT Staffing agencies maintain an active talent pool which allows them to scout talent quickly. When a company loses employees it’s important that those positions are not only replaced by qualified individuals but those positions also need to be replaced quickly so that the workload doesn’t become too heavy for the existing employees. Plus staffing agencies carefully interview prospects to gain as much knowledge as possible and make good placements. Besides IT Staffing agencies absorb the cost of the initial stages of a new hire. They often conduct the background checks and even do part of if not all of the training. This can save your company a ton of money. Plus, if an employee turns out not to be a good fit, many staffing agencies guarantee a replacement employee. Not only does this process save time, it saves money and allows your company to continue to be productive even if the hiring process is not complete and your company lacks permanent employees. You are given the staff you need, even if the employees remain temporary hires. Your productivity is not interrupted because there are employees in place to do the job."
+          imageSRC={cards[0].url}
+          title={cards[0].title}
+          description={cards[0].description}
         />
         <FlipCard
           imageSRC="https://www.gempool.ie/images/uploads/connecting_with_candidates_through_social_media.jpg"

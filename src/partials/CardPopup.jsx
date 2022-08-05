@@ -32,7 +32,7 @@ const CardPopup = ({ close, title, imageSRC, description }) => {
                 className={classNames(styles.closeButton)}
                 onClick={() => close()}
               >
-                CLOSE
+                Nice article, thanks!
               </button>
             </div>
           </div>

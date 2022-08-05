@@ -45,6 +45,7 @@ const FlipCard = ({ title, description, imageSRC }) => {
                 >
                   {title}
                 </Typography>
+
                 <Typography
                   className={classNames(styles.hideExtraInDescription)}
                   variant="body2"
@@ -60,14 +61,14 @@ const FlipCard = ({ title, description, imageSRC }) => {
               </Button>
             </CardActions>
           </div>
-          <Typography className={classNames(styles.flipCardBack)}>
+          <CardContent className={classNames(styles.flipCardBack)}>
             <Typography
               className={classNames(styles.hideExtraDetailedDescription)}
               variant="body2"
             >
               {description}
             </Typography>
-          </Typography>
+          </CardContent>
         </div>
       </Card>
       {display ? (

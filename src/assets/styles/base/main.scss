@@ -44,3 +44,22 @@ ul {
 li {
   list-style-type: none;
 }
+
+// --------Custom Scrollbar----------------
+*::-webkit-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  z-index: 999;
+  width: 8px;
+  opacity: 0.7;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $c-orange;
+  border-radius: 10px;
+  outline: none;
+}
