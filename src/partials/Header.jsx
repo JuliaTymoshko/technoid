@@ -2,13 +2,15 @@ import classNames from 'classnames';
 import { useState } from 'react';
 import styles from 'assets/styles/partials/header.module.scss';
 import { ReactComponent as Logo } from 'assets/images/logo.svg';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import avatar from 'assets/images/avatar.jpg';
+import Avatar from '@mui/material/Avatar';
 import MobileMenu from './MobileMenu';
 import NavigationLink from './NavigationLink';
+import { useAuth } from 'utils/hooks/useAuth';
 
 const Header = () => {
   const [display, setDisplay] = useState(false);
+
+  const auth = useAuth();
 
   const hideModal = () => {
     setDisplay(false);
@@ -23,7 +25,7 @@ const Header = () => {
         />
         <nav>
           <ul className={classNames(styles.navigation)}>
-            <li>
+            <li onClick={() => hideModal()}>
               <NavigationLink navigateToValue="/" navigateName="Home" />
             </li>
             <li>
@@ -39,11 +41,14 @@ const Header = () => {
               />
             </li>
             <div>
-              {/* <AccountCircleIcon className={classNames(styles.accuntIcon)} /> */}
-              <img
-                src={avatar}
-                alt="avatar"
-                className={classNames(styles.accuntIconWrap)}
+              <NavigationLink
+                navigateToValue="profile"
+                navigateName={
+                  <Avatar
+                    alt={auth.user ? auth.user.firstName : 'Guest avatar'}
+                    src={auth.user ? auth.user.avatar : ''}
+                  />
+                }
               />
             </div>
           </ul>

@@ -1,15 +1,28 @@
+import { useEffect, useState } from 'react';
+
 import classNames from 'classnames';
 import styles from 'assets/styles/pages/home/sponsors.module.scss';
 
 // Partials & Utils
 import SectionTitle from 'partials/SectionTitle';
-import technologies from 'utils/jsons/technologies.json';
 
 // Import swiper
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { getDataFromJSONserver } from 'utils/fetching/getData';
 
 const Sponsors = () => {
+  const [technologiesList, setTechnologiesList] = useState([]);
+
+  const loadResult = async () => {
+    const result = await getDataFromJSONserver('technologies');
+    setTechnologiesList(result);
+  };
+
+  useEffect(() => {
+    loadResult();
+  }, []);
+
   return (
     <section className={classNames(styles.sponsors)}>
       <SectionTitle title="Technologies we are" highlightedText="adept in" />
@@ -38,7 +51,7 @@ const Sponsors = () => {
             },
           }}
         >
-          {technologies.map((technology) => {
+          {technologiesList.map((technology) => {
             return (
               <SwiperSlide key={technology.id}>
                 <img

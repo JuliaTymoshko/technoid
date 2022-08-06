@@ -5,9 +5,13 @@ import styles from 'assets/styles/pages/gallery/gallery.module.scss';
 import SectionTitle from 'partials/SectionTitle';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
-import cards from 'utils/jsons/cards.json';
-
 import FlipCard from 'partials/FlipCard';
+
+import PropTypes from 'prop-types';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Skeleton from '@mui/material/Skeleton';
 
 import {
   FormControl,
@@ -22,16 +26,62 @@ import SearchIcon from '@mui/icons-material/Search';
 import SortByAlphaIcon from '@mui/icons-material/SortByAlpha';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import FilterAltOffIcon from '@mui/icons-material/FilterAltOff';
+import cards from 'utils/jsons/cards.json';
 
 const Gallery = () => {
-  const [cardsToMap, setCardsToMap] = useState(cards || []);
+  const [cardsToMap, setCardsToMap] = useState([]);
+
   const [searchTitle, setSearchTitle] = useState('');
   const [searchDescription, setSearchDescription] = useState('');
   const [searchCategory, setSearchCategory] = useState('');
   const [titleOrder, setTitleOrder] = useState('');
   const [pubDateOrder, setPubDateOrder] = useState('asc');
+
   const matches = useMediaQuery('(max-width: 480px)');
 
+  function Media(props) {
+    const { loading = false } = props;
+
+    return (
+      <Grid container wrap="nowrap">
+        {(loading ? Array.from(new Array(3)) : cardsToMap).map(
+          (item, index) => (
+            <Box key={index} sx={{ width: 210, marginRight: 0.5, my: 5 }}>
+              {item ? (
+                <img
+                  style={{ width: 210, height: 118 }}
+                  alt={item.title}
+                  src={item.src}
+                />
+              ) : (
+                <Skeleton variant="rectangular" width={210} height={118} />
+              )}
+
+              {/* {item ? (
+                <Box sx={{ pr: 2 }}>
+                  <Typography gutterBottom variant="body2">
+                    {item.title}
+                  </Typography>
+                  <Typography variant="caption" color="text.secondary">
+                    {`${item.views} • ${item.createdAt}`}
+                  </Typography>
+                </Box>
+              ) : (
+                <Box sx={{ pt: 0.5 }}>
+                  <Skeleton />
+                  <Skeleton width="60%" />
+                </Box>
+              )} */}
+            </Box>
+          )
+        )}
+      </Grid>
+    );
+  }
+
+  Media.propTypes = {
+    loading: PropTypes.bool,
+  };
   const handleChange = () => {
     let allCards = cards;
 
@@ -70,7 +120,6 @@ const Gallery = () => {
     }
 
     return allCards;
-    // setCardsToMap(allCards);
   };
 
   useEffect(() => {
@@ -204,7 +253,7 @@ const Gallery = () => {
         </div>
       </div>
       <div className={classNames(styles.galleryImages)}>
-        {cardsToMap.map((card) => {
+        {/* {cardsToMap.map((card) => {
           return (
             <FlipCard
               key={card.id}
@@ -213,7 +262,11 @@ const Gallery = () => {
               description={card.description}
             />
           );
-        })}
+        })} */}
+        <Box sx={{ overflow: 'hidden' }}>
+          <Media loading />
+          <Media />
+        </Box>
       </div>
     </div>
   );

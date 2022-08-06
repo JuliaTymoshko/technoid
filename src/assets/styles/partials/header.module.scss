@@ -48,19 +48,3 @@
     }
   }
 }
-
-.accuntIconWrap {
-  @include flexRow;
-  justify-content: center;
-  background-color: rgb(180, 180, 180);
-  border-radius: 50%;
-  max-width: 30px;
-  max-height: 30px;
-}
-
-.accuntIcon {
-  font-size: $fs-h1;
-  cursor: pointer;
-  color: $c-grey;
-  transition: $t-normal;
-}

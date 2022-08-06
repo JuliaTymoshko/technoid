@@ -1,0 +1,15 @@
+// @import 'assets/styles/base/mixins.scss';
+@import 'assets/styles/base/media.scss';
+// @import 'assets/styles/base/variables.scss';
+
+.profile {
+  margin-bottom: 100px;
+
+  @media (max-width: $bp-tablet) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $bp-phone) {
+    margin-bottom: 60px;
+  }
+}

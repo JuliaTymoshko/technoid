@@ -20,18 +20,24 @@ const MobileMenu = ({ close }) => {
             <nav>
               <ul className={classNames(styles.modalBody)}>
                 <li>
-                  <NavigationLink navigateToValue="/" navigateName="Home" />
+                  <NavigationLink
+                    navigateToValue="/"
+                    navigateName="Home"
+                    close={() => close()}
+                  />
                 </li>
                 <li>
                   <NavigationLink
                     navigateToValue="gallery"
                     navigateName="Gallery"
+                    close={() => close()}
                   />
                 </li>
                 <li>
                   <NavigationLink
                     navigateToValue="profile"
                     navigateName="Profile"
+                    close={() => close()}
                   />
                 </li>
               </ul>

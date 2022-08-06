@@ -1,0 +1,378 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Aurelia",
+      "lastName": "Denyakin",
+      "email": "adenyakin0@mail.ru",
+      "password": "5BftIEhn",
+      "avatar": "http://dummyimage.com/174x199.png/dddddd/000000",
+      "bio": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris."
+    },
+    {
+      "id": 2,
+      "firstName": "Jameson",
+      "lastName": "Stothert",
+      "email": "jstothert1@economist.com",
+      "password": "ccQZ40A",
+      "avatar": "http://dummyimage.com/164x224.png/ff4444/ffffff",
+      "bio": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
+    },
+    {
+      "id": 3,
+      "firstName": "Ddene",
+      "lastName": "Bollum",
+      "email": "dbollum2@t.co",
+      "password": "tDP6Qf1z7B",
+      "avatar": "http://dummyimage.com/157x208.png/dddddd/000000",
+      "bio": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."
+    },
+    {
+      "id": 4,
+      "firstName": "Alexandre",
+      "lastName": "Sutterby",
+      "email": "asutterby3@barnesandnoble.com",
+      "password": "5xuU9vUD",
+      "avatar": "http://dummyimage.com/110x109.png/cc0000/ffffff",
+      "bio": "Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem."
+    },
+    {
+      "id": 5,
+      "firstName": "Alberta",
+      "lastName": "Overstreet",
+      "email": "aoverstreet4@nhs.uk",
+      "password": "6x8WgaGEPWhi",
+      "avatar": "http://dummyimage.com/163x230.png/dddddd/000000",
+      "bio": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem."
+    },
+    {
+      "id": 6,
+      "firstName": "Holly",
+      "lastName": "Orrett",
+      "email": "horrett5@oracle.com",
+      "password": "bH9QP5yv5uE",
+      "avatar": "http://dummyimage.com/109x207.png/ff4444/ffffff",
+      "bio": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
+    },
+    {
+      "id": 7,
+      "firstName": "Farrell",
+      "lastName": "Garrod",
+      "email": "fgarrod6@phpbb.com",
+      "password": "fS0qwOo",
+      "avatar": "http://dummyimage.com/148x179.png/5fa2dd/ffffff",
+      "bio": "Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl."
+    },
+    {
+      "id": 8,
+      "firstName": "Cristabel",
+      "lastName": "Bilston",
+      "email": "cbilston7@blinklist.com",
+      "password": "iCYkcLf69",
+      "avatar": "http://dummyimage.com/180x199.png/dddddd/000000",
+      "bio": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti. Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris. Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem."
+    },
+    {
+      "id": 9,
+      "firstName": "Lauretta",
+      "lastName": "Boddie",
+      "email": "lboddie8@purevolume.com",
+      "password": "Rhcmk274sF",
+      "avatar": "http://dummyimage.com/151x134.png/5fa2dd/ffffff",
+      "bio": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo."
+    },
+    {
+      "id": 10,
+      "firstName": "Craig",
+      "lastName": "Grayshon",
+      "email": "cgrayshon9@skype.com",
+      "password": "OaxTIv",
+      "avatar": "http://dummyimage.com/119x100.png/5fa2dd/ffffff",
+      "bio": "Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus."
+    },
+    {
+      "id": 11,
+      "firstName": "Marjory",
+      "lastName": "Fairtlough",
+      "email": "mfairtlougha@digg.com",
+      "password": "70AvUB4FC",
+      "avatar": "http://dummyimage.com/244x202.png/dddddd/000000",
+      "bio": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus. In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 12,
+      "firstName": "Kerstin",
+      "lastName": "Matthensen",
+      "email": "kmatthensenb@dion.ne.jp",
+      "password": "9aSZMW",
+      "avatar": "http://dummyimage.com/149x113.png/ff4444/ffffff",
+      "bio": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros."
+    },
+    {
+      "id": 13,
+      "firstName": "Harriett",
+      "lastName": "Felderer",
+      "email": "hfeldererc@surveymonkey.com",
+      "password": "sBddJmZi",
+      "avatar": "http://dummyimage.com/157x152.png/cc0000/ffffff",
+      "bio": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui. Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti."
+    },
+    {
+      "id": 14,
+      "firstName": "Andeee",
+      "lastName": "Parren",
+      "email": "aparrend@go.com",
+      "password": "eDnrhAcFL",
+      "avatar": "http://dummyimage.com/133x159.png/5fa2dd/ffffff",
+      "bio": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem. Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum."
+    },
+    {
+      "id": 15,
+      "firstName": "Gil",
+      "lastName": "Sherry",
+      "email": "gsherrye@acquirethisname.com",
+      "password": "TIbZypS",
+      "avatar": "http://dummyimage.com/204x150.png/ff4444/ffffff",
+      "bio": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio."
+    },
+    {
+      "id": 16,
+      "firstName": "Rheta",
+      "lastName": "Ormes",
+      "email": "rormesf@ox.ac.uk",
+      "password": "SHTFCMnA0hT",
+      "avatar": "http://dummyimage.com/133x231.png/ff4444/ffffff",
+      "bio": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo."
+    },
+    {
+      "id": 17,
+      "firstName": "Vallie",
+      "lastName": "Ionn",
+      "email": "vionng@ow.ly",
+      "password": "phuyOXv",
+      "avatar": "http://dummyimage.com/195x103.png/cc0000/ffffff",
+      "bio": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque."
+    },
+    {
+      "id": 18,
+      "firstName": "Imogene",
+      "lastName": "Wile",
+      "email": "iwileh@salon.com",
+      "password": "tzH24v",
+      "avatar": "http://dummyimage.com/202x208.png/5fa2dd/ffffff",
+      "bio": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque."
+    },
+    {
+      "id": 19,
+      "firstName": "Reilly",
+      "lastName": "Kunneke",
+      "email": "rkunnekei@mac.com",
+      "password": "xy7KpOJmY",
+      "avatar": "http://dummyimage.com/169x227.png/cc0000/ffffff",
+      "bio": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus."
+    },
+    {
+      "id": 20,
+      "firstName": "Wald",
+      "lastName": "Hawkswell",
+      "email": "whawkswellj@hatena.ne.jp",
+      "password": "zOHMl9SJ7",
+      "avatar": "http://dummyimage.com/196x146.png/5fa2dd/ffffff",
+      "bio": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat. Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
+    },
+    {
+      "id": 21,
+      "firstName": "Julia",
+      "lastName": "Tymoshko",
+      "email": "julia.t@cheitgroup.com",
+      "password": "12345",
+      "avatar": "https://avatars.githubusercontent.com/u/61196299?v=4",
+      "bio": "✓ React & TypeScript ✓ Libs: React Router, MUI, Formik, Yup, Moment.js, js-cookie, React Spring/Parallax, bcrypt, jsonwebtoken  ✓ Rest API, Axios & Fetch ✓ HTML & PUG  ✓ CSS & SCSS, Animate.css ✓ Git & GitHub & Heroku"
+    }
+  ],
+  "cards": [
+    {
+      "id": 1,
+      "url": "https://img.freepik.com/premium-photo/businessman-draw-growth-graph-and-progress-of-business-and-analyzing-financial_34200-419.jpg?w=2000",
+      "title": "How can a stuffing solution company help your business?",
+      "description": "IT Staffing agencies maintain an active talent pool which allows them to scout talent quickly. When a company loses employees it’s important that those positions are not only replaced by qualified individuals but those positions also need to be replaced quickly so that the workload doesn’t become too heavy for the existing employees. Plus staffing agencies carefully interview prospects to gain as much knowledge as possible and make good placements. Besides IT Staffing agencies absorb the cost of the initial stages of a new hire. They often conduct the background checks and even do part of if not all of the training. This can save your company a ton of money. Plus, if an employee turns out not to be a good fit, many staffing agencies guarantee a replacement employee. Not only does this process save time, it saves money and allows your company to continue to be productive even if the hiring process is not complete and your company lacks permanent employees. You are given the staff you need, even if the employees remain temporary hires. Your productivity is not interrupted because there are employees in place to do the job.",
+      "publicationDate": "Fri Aug 05 2022 13:57:59 GMT+0300 (Eastern European Summer Time)",
+      "category": "Recruitment",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 2,
+      "url": "https://i.imgur.com/A0zD3lO.png",
+      "title": "What is a business?",
+      "description": "The term business describes any activity that involves the provision of a product or service to consumers. These items may be tangible, such as cars or soda, or they may be intangible, such as software or services. Business activities can range from providing electricity or water to services like advertising or providing warehouse space. However, whatever the type of business, it must be run in a way that makes customers happy. Listed below are the main components of a business. Every business involves a profit motive. The reason why people engage in business activities is to earn profit and accumulate wealth. It is important to note that higher prices and higher satisfaction of consumers are indicators of higher profits and higher satisfaction. But these factors are only a part of business success. Fortunately, a variety of business forms exist, from small, home-based businesses to massive corporations with hundreds of employees. In any case, business is a great way to generate revenue and contribute to society. A business primarily involves the production of goods and services for profit. It cannot be a non-profit organization. A business requires regular transactions between buyers and sellers of goods and services. Therefore, it is imperative that the activities of a business are consistent. Even a one-time transaction is not sufficient to qualify as a business. If, however, the business deals with the same products and services on a regular basis, then it will be considered a business.",
+      "publicationDate": "Fri Aug 05 2022 13:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Business",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 3,
+      "url": "https://cloudinary.hbs.edu/hbsit/image/upload/s--Fm3oHP0m--/f_auto,c_fill,h_375,w_750,/v20200101/79015AB87FD6D3284472876E1ACC3428.jpg",
+      "title": "7 BUSINESS FUNDAMENTALS PROFESSIONALS IN EVERY INDUSTRY SHOULD KNOW",
+      "description": "The basic skills and concepts needed to run an organization are referred to as business fundamentals. By fully comprehending how a business operates, you’ll have a better idea of how different business functions relate and how your decisions impact the organization as a whole. If you want to equip yourself with the skills needed to thrive in your present role—and future ones—here are seven business fundamentals you should know.",
+      "publicationDate": "Fri Aug 05 2022 8:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Business",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 4,
+      "url": "https://ied.eu/wp-content/uploads/2018/10/ERP-Business-Intelligence-Wallpaper.png",
+      "title": "Business guidance tips for a successful company",
+      "description": "To succeed as a business owner, you must take into consideration the fact that, business talent alone might not be enough. It is important to follow your gut but that is not always enough. No one can be ao the top of their game throughout the entire week, month or year. And when it comes to your business you need to. Needing help to run your business during difficulties is not proof of a weak boss. It is proof of a strong leader with a good perception of what goes around and what needs to be changed or fixed. Business guidance is necessary. There are things that you can do on your own and things that you will need to get professional help for. Here are some tips about the things you can do on your own.",
+      "publicationDate": "Fri Aug 05 2022 14:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Business",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 5,
+      "url": "https://unatrix.com/blog/wp-content/uploads/2015/10/tag_cloud_recruitment-Kopie.jpg",
+      "title": "What are the 9 key features for an e-recruitment system for engineering services?",
+      "description": "Nowadays recruitment software has to meet many requirements. Whenever a company decides to select a new system there are different groups of interest involved: e.g. recruiters, business managers, IT and management departments. Therefore software manufacturers often see themselves confronted with complex requests and specification sheets that hardly any system can fulfill within a reasonable budget range. So exactly which qualities does an e-recruitment system have to possess to enable the recruiters and business managers to work efficiently? 1. User-friendly. A recruitment system is a complex application that has to be intuitive for the users. The handling has to be clear with a logical allocation of the functionalities in order to increase the user acceptance and productivity. The use of modern web technologies in the software architecture is a precondition, too. 2. Web-based. In any case, an up-to-date system should be web-based. Whereas it doesn’t really matter whether the data is hosted on a server of the client (On premise) or of the supplier (SaaS/Software as a service). The access of all employees to a centralized database enables the usage from different locations. The software can then also be maintained and updated more regularly. 3. Multi-Channel-Posting One of the recruiters’ main activities is the publishing of job offers on various online job portals to obtain the maximum reach. The central handling of the job board logins directly from the system makes the function of multi-channel-posting easy-to-handle and helps to save precious time. 4. CV Parsing. CV parsing is the automatic scanning of candidate data. Applications can be directly extracted, modified and evaluated. Like this the HR employees gain lots of time when inserting data. Furthermore the number of errors resulting from the manual insertion decreases. 5. Matching. The matching between the candidates and the customers’ needs is one of the essential processes for engineering services. It is crucial that the relevant competencies are recognized and considered within the search. A dynamic catalogue of competences that contains different specific keywords as well as synonyms and other spellings and other translations can bring a major advantage. 6. Talent pool. Any position can be staffed with only one candidate. Though this does not necessarily imply that the other applicants do not represent precious human capital. In times where you have to talk about the “war of talents” with a decreasing number of candidates for the number of jobs to be staffed this potential should not be given away with a negative answer. Instead you can transfer them into a talent pool – with their consent, of course. Like this they can be reconsidered for later vacancies. Here it makes sense to use the recruitment software rather like a CRM to establish a regular contact with the pool members.",
+      "publicationDate": "Fri Aug 05 2022 15:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Recruitment",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 6,
+      "url": "https://xobin.com/wp-content/uploads/2021/08/Recruitment.png",
+      "title": "What is Recruitment?",
+      "description": "The process of searching and selecting the best candidate for a job opening is known as recruitment. Through recruitment, an organization attracts an adequate workforce to facilitate an effective selection process and join the efficient workforce. This process involves identifying, attracting, interviewing, selecting, hiring, and onboarding employees. Recruitment works in conjunction with Human Resources.",
+      "publicationDate": "Fri Aug 05 2022 7:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Recruitment",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 7,
+      "url": "https://oursupaluv.com/wp-content/uploads/2021/02/Innovative-Recruitment-Methods-Used-by-Leading-Organization-1-6-scaled-1.jpg",
+      "title": "External Recruitment Methods: Website",
+      "description": "Your company website can be a powerful recruitment tool that attracts prospective job candidates. As most candidates check out a prospective employer’s website before applying, including a dedicated vacancies section demonstrates that you’re a business looking to grow. The information that you provide on this page must make it easy for search engines to understand what your page is about, in order to direct the right traffic to your site.",
+      "publicationDate": "Fri Aug 05 2022 16:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Recruitment",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 8,
+      "url": "https://ipcdigital.com/wp-content/uploads/2022/01/the-future-of-it-industry.jpeg",
+      "title": "Careers To Consider in the IT Industry",
+      "description": "The use of technology has grown over time, resulting in an increase in demand for information technology career paths. This growth has seen more increment every day. Nowadays, more companies in today’s world require an IT department. The IT industry used to be regarded as a field that did not attract many people, but that perception has shifted dramatically. People are increasingly opting for IT as a career path. So, in this post, let’s take a look at some of the jobs that you could venture into if you are interested in the Information Technology industry.",
+      "publicationDate": "Fri Aug 05 2022 5:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Recruitment",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 9,
+      "url": "https://img.etimg.com/thumb/width-1200,height-900,imgsize-79709,resizemode-1,msid-81093397/tech/technology/mckinsey-says-indian-it-industry-to-touch-300-350-billion-in-five-years.jpg",
+      "title": "McKinsey says Indian IT industry to touch $300-350 billion in five years",
+      "description": "The Indian IT industry is expected to touch the $300-$350 billion revenue mark over the next five years growing 10% a year. This will mean that the $194 billion Indian tech industry will be growing at a much faster clip than the 7.5% growth rate registered over the last five years, according to a soon-to-be-released report by McKinsey & Company. This growth of the Indian IT industry will come primarily on the back of digital services, which currently accounts for 30% of the industry",
+      "publicationDate": "Fri Aug 05 2022 11:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "Recruitment",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 10,
+      "url": "https://callibri.ru/system/posts/soc_pictures/000/000/484/large/oseo.png?1610624264",
+      "title": "How SEO works?",
+      "description": "Search engines such as Google and Bing use bots to crawl pages on the web, going from site to site, collecting information about those pages and putting them in an index. Think of the index like a giant library where a librarian can pull up a book (or a web page) to help you find exactly what you’re looking for at the time. Next, algorithms analyze pages in the index, taking into account hundreds of ranking factors or signals, to determine the order pages should appear in the search results for a given query. In our library analogy, the librarian has read every single book in the library and can tell you exactly which one will have the answers to your questions. Our SEO success factors can be considered proxies for aspects of the user experience. It’s how search bots estimate exactly how well a  website or web page can give the searcher what they’re searching for. ",
+      "publicationDate": "Fri Aug 05 2022 23:00:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "SEO",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 11,
+      "url": "https://callibri.ru/system/posts/soc_pictures/000/000/484/large/oseo.png?1610624264",
+      "title": "How SEO works?: NEWEST UPDATE",
+      "description": "Search engines such as Google and Bing use bots to crawl pages on the web, going from site to site, collecting information about those pages and putting them in an index. Think of the index like a giant library where a librarian can pull up a book (or a web page) to help you find exactly what you’re looking for at the time. Next, algorithms analyze pages in the index, taking into account hundreds of ranking factors or signals, to determine the order pages should appear in the search results for a given query. In our library analogy, the librarian has read every single book in the library and can tell you exactly which one will have the answers to your questions. Our SEO success factors can be considered proxies for aspects of the user experience. It’s how search bots estimate exactly how well a  website or web page can give the searcher what they’re searching for. ",
+      "publicationDate": "Fri Aug 05 2022 23:30:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "SEO",
+      "tags": "IT stuffing talent pool recruitment"
+    },
+    {
+      "id": 12,
+      "url": "https://callibri.ru/system/posts/soc_pictures/000/000/484/large/oseo.png?1610624264",
+      "title": "SEO: Breaking news",
+      "description": "Search engines such as Google and Bing use bots to crawl pages on the web, going from site to site, collecting information about those pages and putting them in an index. Think of the index like a giant library where a librarian can pull up a book (or a web page) to help you find exactly what you’re looking for at the time. Next, algorithms analyze pages in the index, taking into account hundreds of ranking factors or signals, to determine the order pages should appear in the search results for a given query. In our library analogy, the librarian has read every single book in the library and can tell you exactly which one will have the answers to your questions. Our SEO success factors can be considered proxies for aspects of the user experience. It’s how search bots estimate exactly how well a  website or web page can give the searcher what they’re searching for. ",
+      "publicationDate": "Fri Aug 05 2022 23:40:00 GMT+0300 (Eastern European Summer Time)",
+      "category": "SEO",
+      "tags": "IT stuffing talent pool recruitment"
+    }
+  ],
+  "swipercards": [
+    {
+      "id": 1,
+      "url": "https://i.imgur.com/A0zD3lO.png",
+      "title": "Las Vegas Business Plan",
+      "description": "Some description about the slide and it needs to be minimum of 75 chars",
+      "btnText": "See more"
+    },
+    {
+      "id": 2,
+      "url": "https://en.blog.businessdecision.com/wp-content/uploads/2021/05/Become-a-Data-Centric-Company-Webinar.png",
+      "title": "7 Reasons Why your Analytics may not deliver ROI",
+      "description": "Some description about the slide and it needs to be minimum of 75 chars",
+      "btnText": "See more"
+    },
+    {
+      "id": 3,
+      "url": "https://rinarecruitment.ro/wp-content/uploads/2021/12/Rina-Recruitment-Services-Romania-scaled.jpg",
+      "title": "The GDPR and right to be forgotten!",
+      "description": "Some description about the slide and it needs to be minimum of 75 chars",
+      "btnText": "See more"
+    }
+  ],
+  "technologies": [
+    {
+      "id": 1,
+      "url": "https://pngimg.com/uploads/android_logo/android_logo_PNG8.png",
+      "title": "Android"
+    },
+    {
+      "id": 2,
+      "url": "https://cdn-icons-png.flaticon.com/512/919/919826.png",
+      "title": "CSS"
+    },
+    {
+      "id": 3,
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png",
+      "title": "HTML"
+    },
+    {
+      "id": 4,
+      "url": "https://www.pngplay.com/wp-content/uploads/9/Java-PNG-Clipart-Background.png",
+      "title": "JAVA"
+    },
+    {
+      "id": 5,
+      "url": "https://i.pinimg.com/originals/a4/e4/40/a4e4404d8de09a68b24ebcfc42317f0a.png",
+      "title": "Odoo"
+    },
+    {
+      "id": 6,
+      "url": "https://iconape.com/wp-content/png_logo_vector/flutter.png",
+      "title": "Flutter"
+    },
+    {
+      "id": 7,
+      "url": "https://www.pngkey.com/png/full/119-1194431_woocommerce-icon-wordpress-woocommerce.png",
+      "title": "Woo Commerce"
+    },
+    {
+      "id": 8,
+      "url": "https://ubiqum.com/assets/uploads/2021/11/full-stack-developer-mern-1024x1024.png",
+      "title": "MERN stack"
+    },
+    {
+      "id": 9,
+      "url": "https://codingthesmartway.com/wp-content/uploads/2018/06/mean_logo.png",
+      "title": "MEAN stack"
+    },
+    {
+      "id": 10,
+      "url": "https://robusttechhouse.com/wp-content/uploads/2015/07/magento.png",
+      "title": "Magento"
+    }
+  ]
+}

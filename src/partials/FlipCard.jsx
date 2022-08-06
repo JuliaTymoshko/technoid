@@ -1,5 +1,6 @@
 import classNames from 'classnames';
 import { useState } from 'react';
+
 import styles from 'assets/styles/partials/flipCard.module.scss';
 
 import Card from '@mui/material/Card';
@@ -77,6 +78,7 @@ const FlipCard = ({ title, description, imageSRC }) => {
           description={description}
           imageSRC={imageSRC}
           close={() => setDisplay(false)}
+          buttonText="Nice article, thanks!"
         />
       ) : null}
     </>

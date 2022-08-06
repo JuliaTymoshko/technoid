@@ -1,14 +1,19 @@
-3. fix toggling  of ASC and DES
-4. вынести отдельно функцию по сортировке
-5. вынести отдельно в константу стили для инпута
 
 2. Page should have pagination (optional, adding infinite scroll is an added advantage)
 3.  skeleton loader (optional, it’s an added advantage.) - https://mui.com/material-ui/react-skeleton/
-5.  login form 
-6.  app context
-7.  edit data (PUT request)
 
-16. проверить SEO
+
+3. fix toggling  of ASC and DES
+18. настроить поле Get news subscription!
+6. не работает скрол ту топ
+
+4. вынести отдельно функцию по сортировке
+5. вынести отдельно в константу стили для инпута, matches, helperText, color="warning", type="text"
+
+20. оптимизация запросов - чтобы не летело несколько
 17. как оптимизировать картинки при загрузке реакт? 
 
-18. настроить поле Get news subscription!
+16. проверить SEO
+
+21. либо фетч либо аксиос --- ? 
+21. переписать все мапы --- ?

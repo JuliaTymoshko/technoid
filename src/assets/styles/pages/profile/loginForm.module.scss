@@ -1,0 +1,21 @@
+.loginWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  min-height: 80px;
+}
+
+.divider {
+  margin-bottom: 30px !important;
+}

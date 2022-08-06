@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import styles from 'assets/styles/partials/cardPopup.module.scss';
 import CustomButton from './CustomButton';
 
-const CardPopup = ({ close, title, imageSRC, description }) => {
+const CardPopup = ({ close, title, imageSRC, description, buttonText }) => {
   return (
     <>
       <div className={classNames(styles.popup)}>
@@ -25,7 +25,7 @@ const CardPopup = ({ close, title, imageSRC, description }) => {
             >
               <p>{description}</p>
               <CustomButton
-                buttonText="Nice article, thanks!"
+                buttonText={buttonText}
                 onClickHandler={() => close()}
               />
             </div>

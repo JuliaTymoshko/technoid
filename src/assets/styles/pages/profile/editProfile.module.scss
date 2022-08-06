@@ -1,0 +1,27 @@
+@import 'assets/styles/base/mixins.scss';
+@import 'assets/styles/base/media.scss';
+@import 'assets/styles/base/variables.scss';
+
+.editProfileWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reqFieldsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 20px;
+
+  @media (max-width: $bp-phone) {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 0;
+  }
+}
+
+.field {
+  min-height: 80px;
+}

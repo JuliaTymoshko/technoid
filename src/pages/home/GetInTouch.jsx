@@ -5,7 +5,6 @@ import styles from 'assets/styles/partials/getInTouch.module.scss';
 import SectionTitle from 'partials/SectionTitle';
 
 import { useState } from 'react';
-import { useAuth } from 'utils/context';
 
 // MUI
 import { Button, TextField } from '@mui/material';
@@ -13,7 +12,7 @@ import SendIcon from '@mui/icons-material/Send';
 
 // formik & validation
 import { useFormik } from 'formik';
-import { validationSchema } from 'utils/validation/validation';
+import { validationSchema } from 'utils/validation/validationGetInTouch';
 import CardPopup from 'partials/CardPopup';
 
 const GetInTouch = () => {
@@ -32,7 +31,6 @@ const GetInTouch = () => {
     validationSchema: validationSchema,
 
     onSubmit: (values) => {
-      console.log(values);
       setDisplay(true);
     },
   });
@@ -125,11 +123,7 @@ const GetInTouch = () => {
         <>
           {display && (
             <div>
-              <CardPopup
-                close={() => setDisplay(false)}
-                title={errMessage}
-                messageType="Warning"
-              />
+              <CardPopup close={() => setDisplay(false)} title={errMessage} />
             </div>
           )}
         </>
