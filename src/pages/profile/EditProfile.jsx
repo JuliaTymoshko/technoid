@@ -42,9 +42,6 @@ const EditProfile = () => {
     validationSchema: validationSchema,
 
     onSubmit: (values, { setValues }) => {
-      console.log('onSubmit');
-      console.log(values);
-
       const headers = new Headers();
       const token = localStorage.getItem('fakeToken');
 
@@ -68,7 +65,6 @@ const EditProfile = () => {
         .then((res) => res.json())
         .then((response) => {
           setDisplay(true);
-          console.log(response);
 
           if (response.ok) {
             setValues({
@@ -81,8 +77,6 @@ const EditProfile = () => {
             });
           }
         });
-
-      console.log('end');
     },
   });
 

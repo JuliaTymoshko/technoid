@@ -5,19 +5,20 @@ import LinearProgress from '@mui/material/LinearProgress';
 
 import Header from './partials/Header';
 import Footer from './partials/Footer';
-import Profile from 'pages/Profile';
+import Profile from 'pages/ProfilePage';
 import { AuthProvider } from 'utils/context/AuthProvider';
 import { useAuth } from 'utils/hooks/useAuth';
+import Bonus from 'pages/BonusPage';
 
-const Gallery = lazy(() => import('pages/Gallery'));
-const Home = lazy(() => import('./pages/Home'));
+const Gallery = lazy(() => import('pages/GalleryPage'));
+const Home = lazy(() => import('./pages/HomePage'));
 
 function RequireAuth({ children }) {
   let auth = useAuth();
   let location = useLocation();
 
   if (!auth.user) {
-    return <Navigate to="/" state={{ from: location }} replace />;
+    return <Navigate to="/profile" state={{ from: location }} replace />;
   }
 
   return children;
@@ -33,14 +34,14 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/gallery" element={<Gallery />} />
-              {/* <Route
-                path="/gallery"
+              <Route
+                path="/bonus"
                 element={
                   <RequireAuth>
-                    <Gallery />
+                    <Bonus />
                   </RequireAuth>
                 }
-              /> */}
+              />
               <Route path="/profile" element={<Profile />} />
             </Routes>
           </Suspense>

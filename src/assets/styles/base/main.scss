@@ -1,19 +1,19 @@
-// * This styles are linked in index.scss which is linked in app.jsx and working already.
+// * This styles are linked to index.scss which is linked in app.jsx.
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // border: 1px solid rgb(174, 174, 255);
-}
-
-img {
-  width: 100%;
 }
 
 body {
   font-family: $ff-main;
   font-size: $fs-base;
+  height: 100%;
+}
+
+img {
+  width: 100%;
 }
 
 a {
@@ -32,10 +32,16 @@ h6 {
 
 .container {
   max-width: 1480px;
-  margin: 120px auto 0 auto;
+  margin: 40px auto 0 auto;
   padding: 0 20px;
-  // border: 1px solid red;
   width: 100%;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ul {

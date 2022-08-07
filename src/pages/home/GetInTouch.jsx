@@ -45,8 +45,8 @@ const GetInTouch = () => {
         >
           <TextField
             className={classNames(styles.field)}
-            label="First Name"
             color="warning"
+            label="First Name"
             name="firstName"
             id="firstName"
             required
@@ -57,8 +57,8 @@ const GetInTouch = () => {
           />
           <TextField
             className={classNames(styles.field)}
-            label="Last Name"
             color="warning"
+            label="Last Name"
             name="lastName"
             id="lastName"
             required

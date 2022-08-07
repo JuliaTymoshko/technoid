@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-
 // ! Import swiper
 import {
   Navigation,
@@ -17,25 +15,14 @@ import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss/effect-fade';
 import 'swiper/scss/lazy';
-import Slide from 'partials/Slide';
+import Slide from 'pages/home/Slide';
 import SectionTitle from 'partials/SectionTitle';
-import { getDataFromJSONserver } from 'utils/fetching/getData';
+import swiperCards from 'utils/jsons/swiperCards.json';
 
 const Carousel = () => {
-  const [swiperCards, setSwiperCards] = useState([]);
-
-  const loadResult = async () => {
-    const result = await getDataFromJSONserver('swipercards');
-    setSwiperCards(result);
-  };
-
-  useEffect(() => {
-    loadResult();
-  }, []);
-
   return (
     <section>
-      <SectionTitle title="This is" highlightedText="swiper" />
+      <SectionTitle title="Our" highlightedText="Overview" />
 
       <Swiper
         className="customSwiperWrap"

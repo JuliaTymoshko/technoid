@@ -14,6 +14,7 @@ export function AuthProvider({ children }) {
 
   let signout = (callback) => {
     return fakeAuthProvider.signout(() => {
+      localStorage.clear('fakeToken');
       setUser(null);
       callback();
     });

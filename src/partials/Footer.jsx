@@ -1,6 +1,5 @@
 import styles from 'assets/styles/partials/footer.module.scss';
 import classNames from 'classnames';
-import { NavLink } from 'react-router-dom';
 import NavigationLink from './NavigationLink';
 
 const Footer = () => {

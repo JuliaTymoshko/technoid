@@ -9,10 +9,7 @@ const MobileMenu = ({ close }) => {
         <div className={classNames(styles.modalContent)}>
           <div className={classNames(styles.modalHeader)}>
             <h3 className={classNames(styles.modalTitle)}>Menu</h3>
-            <div
-              className={classNames(styles.closeButton)}
-              onClick={() => close()}
-            >
+            <div className={classNames(styles.closeButton)} onClick={close}>
               ×
             </div>
           </div>
@@ -23,21 +20,28 @@ const MobileMenu = ({ close }) => {
                   <NavigationLink
                     navigateToValue="/"
                     navigateName="Home"
-                    close={() => close()}
+                    close={close}
                   />
                 </li>
                 <li>
                   <NavigationLink
                     navigateToValue="gallery"
                     navigateName="Gallery"
-                    close={() => close()}
+                    close={close}
                   />
                 </li>
                 <li>
                   <NavigationLink
                     navigateToValue="profile"
                     navigateName="Profile"
-                    close={() => close()}
+                    close={close}
+                  />
+                </li>
+                <li>
+                  <NavigationLink
+                    navigateToValue="bonus"
+                    navigateName="Bonus"
+                    close={close}
                   />
                 </li>
               </ul>

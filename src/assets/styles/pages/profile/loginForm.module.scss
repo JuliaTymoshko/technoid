@@ -1,14 +1,17 @@
+@import 'assets/styles/base/mixins.scss';
+
 .loginWrapper {
   max-width: 600px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+
+  @include flexColumn;
+  align-items: stretch;
   gap: 20px;
 }
 
 .fieldsWrapper {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
+  align-items: stretch;
   gap: 20px;
 }
 

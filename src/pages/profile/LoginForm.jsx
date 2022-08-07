@@ -1,8 +1,8 @@
+import { useState } from 'react';
 import classNames from 'classnames';
 import styles from 'assets/styles/pages/profile/loginForm.module.scss';
 import { Button, TextField, Divider } from '@mui/material';
 import LoginIcon from '@mui/icons-material/Login';
-import { useState } from 'react';
 import { useAuth } from 'utils/hooks/useAuth';
 
 import { useFormik } from 'formik';
@@ -10,9 +10,6 @@ import { validationSchema } from 'utils/validation/validationLogin';
 import { getDataFromJSONserver } from 'utils/fetching/getData';
 
 const LoginForm = () => {
-  // const URL = `http://localhost:8000/Users/21`;
-  // http://localhost:8000/cards?_sort=id&_order=desc
-
   const auth = useAuth();
 
   const [email, setEmail] = useState('');
@@ -44,11 +41,7 @@ const LoginForm = () => {
       return;
     } else {
       auth.signin(user, () => window.scrollTo(0, 0));
-      console.log(user);
-      localStorage.setItem(
-        'fakeToken',
-        `${user.firstName}${user.lastName}${user.id}${user.email}`
-      );
+      localStorage.setItem('fakeToken', user.id);
     }
   };
 
@@ -93,7 +86,7 @@ const LoginForm = () => {
             variant="outlined"
             size="large"
             endIcon={<LoginIcon />}
-            onClick={() => loadUser()}
+            onClick={loadUser}
           >
             Login
           </Button>

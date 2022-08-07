@@ -1,6 +1,5 @@
 import classNames from 'classnames';
 import styles from 'assets/styles/pages/profile/profile.module.scss';
-import { useState } from 'react';
 import { useAuth } from 'utils/hooks/useAuth';
 
 // Components
@@ -10,8 +9,6 @@ import LoginForm from './profile/LoginForm';
 
 const Profile = () => {
   const auth = useAuth();
-
-  const [display, setDisplay] = useState(false);
 
   return (
     <section className={classNames(styles.profile)}>

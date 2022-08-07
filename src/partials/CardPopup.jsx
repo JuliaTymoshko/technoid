@@ -19,9 +19,9 @@ const CardPopup = ({ close, title, imageSRC, description, buttonText }) => {
             </div>
             <div
               className={classNames(styles.popupBody)}
-              onClick={(e) => {
-                e.stopPropagation();
-              }}
+              // onClick={(e) => {
+              //   e.stopPropagation();
+              // }}
             >
               <p>{description}</p>
               <CustomButton

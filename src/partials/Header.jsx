@@ -6,6 +6,7 @@ import Avatar from '@mui/material/Avatar';
 import MobileMenu from './MobileMenu';
 import NavigationLink from './NavigationLink';
 import { useAuth } from 'utils/hooks/useAuth';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [display, setDisplay] = useState(false);
@@ -25,7 +26,7 @@ const Header = () => {
         />
         <nav>
           <ul className={classNames(styles.navigation)}>
-            <li onClick={() => hideModal()}>
+            <li onClick={hideModal}>
               <NavigationLink navigateToValue="/" navigateName="Home" />
             </li>
             <li>
@@ -40,16 +41,16 @@ const Header = () => {
                 navigateName="Profile"
               />
             </li>
+            <li>
+              <NavigationLink navigateToValue="bonus" navigateName="Bonus" />
+            </li>
             <div>
-              <NavigationLink
-                navigateToValue="profile"
-                navigateName={
-                  <Avatar
-                    alt={auth.user ? auth.user.firstName : 'Guest avatar'}
-                    src={auth.user ? auth.user.avatar : ''}
-                  />
-                }
-              />
+              <Link to="/profile">
+                <Avatar
+                  alt={auth.user ? auth.user.firstName : 'Guest avatar'}
+                  src={auth.user ? auth.user.avatar : ''}
+                />
+              </Link>
             </div>
           </ul>
         </nav>

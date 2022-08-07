@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import styles from 'assets/styles/pages/home/slide.module.scss';
-import CustomButton from './CustomButton';
+import CustomButton from '../../partials/CustomButton';
 
 const Slide = ({ title, description, btnText, url, lazyClassForImage }) => {
   return (

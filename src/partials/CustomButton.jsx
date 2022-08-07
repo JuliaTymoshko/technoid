@@ -7,7 +7,7 @@ const CustomButton = ({ buttonText, onClickHandler }) => {
       className={classNames(styles.customButton)}
       onClick={onClickHandler}
     >
-      {buttonText || 'Hello'}
+      {buttonText || 'Button :)'}
     </button>
   );
 };
