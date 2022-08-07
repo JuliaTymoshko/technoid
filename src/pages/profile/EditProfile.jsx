@@ -9,7 +9,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import LogoutIcon from '@mui/icons-material/Login';
 import FolderIcon from '@mui/icons-material/Folder';
-import updImg from 'assets/images/updated.png';
+import updImg from 'assets/images/updated.webp';
 
 // Formik & Validation
 import { useFormik } from 'formik';

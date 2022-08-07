@@ -1,12 +1,14 @@
 import classNames from 'classnames';
-import { useState } from 'react';
 import styles from 'assets/styles/partials/header.module.scss';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { useAuth } from 'utils/hooks/useAuth';
+
+// Components
 import { ReactComponent as Logo } from 'assets/images/logo.svg';
-import Avatar from '@mui/material/Avatar';
 import MobileMenu from './MobileMenu';
 import NavigationLink from './NavigationLink';
-import { useAuth } from 'utils/hooks/useAuth';
-import { Link } from 'react-router-dom';
+import Avatar from '@mui/material/Avatar';
 
 const Header = () => {
   const [display, setDisplay] = useState(false);

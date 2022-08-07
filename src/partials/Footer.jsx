@@ -1,6 +1,9 @@
-import styles from 'assets/styles/partials/footer.module.scss';
 import classNames from 'classnames';
+import styles from 'assets/styles/partials/footer.module.scss';
+import { Formik } from 'formik';
+
 import NavigationLink from './NavigationLink';
+import CustomButton from './CustomButton';
 
 const Footer = () => {
   return (
@@ -58,8 +61,42 @@ const Footer = () => {
       <div className={classNames(styles.footerBlock)}>
         <h4 className={classNames(styles.footerTitle)}>Newsletter form</h4>
         <div className={classNames(styles.footerSubBlock)}>
-          <input type="text" className={classNames(styles.footerInput)} />
-          <div>Get news subscription!</div>
+          <Formik
+            initialValues={{ email: '' }}
+            validate={(values) => {
+              const errors = {};
+              if (!values.email) {
+                errors.email = 'Required';
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+              ) {
+                errors.email = 'Invalid email address';
+              }
+              return errors;
+            }}
+            onSubmit={async (values) => {
+              alert(`You're subscribed for news with ${values.email} email `);
+            }}
+          >
+            {({ values, handleChange, handleBlur, handleSubmit }) => (
+              <form
+                onSubmit={handleSubmit}
+                className={classNames(styles.footerSubscribe)}
+              >
+                <div>Get news subscription!</div>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className={classNames(styles.footerInput)}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  value={values.email}
+                />
+                <CustomButton buttonText="Subscribe" type="submit" />
+              </form>
+            )}
+          </Formik>
         </div>
       </div>
     </footer>

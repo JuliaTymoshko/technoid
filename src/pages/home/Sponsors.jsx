@@ -1,13 +1,13 @@
 import classNames from 'classnames';
 import styles from 'assets/styles/pages/home/sponsors.module.scss';
 
-// Partials & Utils
+// Components & Utils
 import SectionTitle from 'partials/SectionTitle';
+import technologiesList from 'utils/jsons/technologies.json';
 
 // Import swiper
 import { Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import technologiesList from 'utils/jsons/technologies.json';
 
 const Sponsors = () => {
   return (

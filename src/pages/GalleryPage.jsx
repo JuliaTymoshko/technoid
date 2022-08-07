@@ -2,13 +2,17 @@ import classNames from 'classnames';
 import styles from 'assets/styles/pages/gallery/gallery.module.scss';
 import { useEffect, useState } from 'react';
 
+// Components
 import SectionTitle from 'partials/SectionTitle';
 import FlipCard from 'partials/FlipCard';
 import ResultNotFound from './gallery/ResultNotFound';
+import SkeletonCardLoader from './gallery/SkeletonCardLoader';
 
+// Data & functions
 import cards from 'utils/jsons/cards.json';
 import { filterCards } from 'utils/functions/filterCards';
 
+// MUI
 import {
   FormControl,
   IconButton,
@@ -17,8 +21,6 @@ import {
   Select,
   TextField,
 } from '@mui/material';
-import Skeleton from '@mui/material/Skeleton';
-import { Stack } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import SortByAlphaIcon from '@mui/icons-material/SortByAlpha';
 import DateRangeIcon from '@mui/icons-material/DateRange';
@@ -27,9 +29,9 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 const Gallery = () => {
   const [cardsToMap, setCardsToMap] = useState(cards);
-
   const [loading, setLoading] = useState(true);
 
+  // States for filtering fields
   const [searchTitle, setSearchTitle] = useState('');
   const [searchDescription, setSearchDescription] = useState('');
   const [searchCategory, setSearchCategory] = useState('');
@@ -88,8 +90,6 @@ const Gallery = () => {
           )}
         >
           <TextField
-            fullWidth
-            className={classNames(styles.field)}
             size={matches ? 'small' : 'medium'}
             color="warning"
             label="Search by title"
@@ -108,8 +108,6 @@ const Gallery = () => {
             }}
           />
           <TextField
-            fullWidth
-            className={classNames(styles.field)}
             size={matches ? 'small' : 'medium'}
             color="warning"
             label="Phrase match"
@@ -186,13 +184,7 @@ const Gallery = () => {
                     description={card.description}
                   />
                 ) : (
-                  <Stack height={400} maxWidth={300}>
-                    <Skeleton variant="rectangular" height={180} />
-                    <Skeleton variant="text" height={80} />
-                    <Skeleton variant="text" />
-                    <Skeleton variant="text" />
-                    <Skeleton variant="text" />
-                  </Stack>
+                  <SkeletonCardLoader />
                 )}
               </div>
             ))}

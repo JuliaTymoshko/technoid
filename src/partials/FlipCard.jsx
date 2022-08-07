@@ -1,14 +1,14 @@
 import classNames from 'classnames';
-import { useState } from 'react';
-
 import styles from 'assets/styles/partials/flipCard.module.scss';
+import { useState } from 'react';
+import CardPopup from './CardPopup';
 
+// MUI
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Button, CardActionArea, CardActions } from '@mui/material';
-import CardPopup from './CardPopup';
 
 const FlipCard = ({ title, description, imageSRC }) => {
   const [display, setDisplay] = useState(false);

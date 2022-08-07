@@ -68,3 +68,9 @@
   padding: 10px 5px;
   border-radius: 8px;
 }
+
+.footerSubscribe {
+  @include flexColumn;
+  align-items: flex-start;
+  gap: 10px;
+}

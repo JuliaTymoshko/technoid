@@ -1,13 +1,16 @@
-import { useState } from 'react';
 import classNames from 'classnames';
 import styles from 'assets/styles/pages/profile/loginForm.module.scss';
-import { Button, TextField, Divider } from '@mui/material';
-import LoginIcon from '@mui/icons-material/Login';
-import { useAuth } from 'utils/hooks/useAuth';
+import { useState } from 'react';
 
-import { useFormik } from 'formik';
+// Utils
 import { validationSchema } from 'utils/validation/validationLogin';
 import { getDataFromJSONserver } from 'utils/fetching/getData';
+import { useAuth } from 'utils/hooks/useAuth';
+
+// MUI & Formik
+import { Button, TextField, Divider } from '@mui/material';
+import LoginIcon from '@mui/icons-material/Login';
+import { useFormik } from 'formik';
 
 const LoginForm = () => {
   const auth = useAuth();

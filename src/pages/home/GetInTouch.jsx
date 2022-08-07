@@ -1,10 +1,11 @@
 import classNames from 'classnames';
 import styles from 'assets/styles/partials/getInTouch.module.scss';
-
-// Partials & Utils
-import SectionTitle from 'partials/SectionTitle';
-
 import { useState } from 'react';
+
+// Components
+import SectionTitle from 'partials/SectionTitle';
+import CardPopup from 'partials/CardPopup';
+import sentImg from 'assets/images/sent.webp';
 
 // MUI
 import { Button, TextField } from '@mui/material';
@@ -13,10 +14,8 @@ import SendIcon from '@mui/icons-material/Send';
 // formik & validation
 import { useFormik } from 'formik';
 import { validationSchema } from 'utils/validation/validationGetInTouch';
-import CardPopup from 'partials/CardPopup';
 
 const GetInTouch = () => {
-  const [errMessage, setErrMessage] = useState(' ');
   const [display, setDisplay] = useState(false);
 
   const formik = useFormik({
@@ -32,6 +31,7 @@ const GetInTouch = () => {
 
     onSubmit: (values) => {
       setDisplay(true);
+      console.log(values);
     },
   });
 
@@ -108,6 +108,8 @@ const GetInTouch = () => {
             value={formik.values.message}
             onChange={formik.handleChange}
             helperText={formik.touched.message ? formik.errors.message : ''}
+            multiline
+            rows={3}
           />
 
           <Button
@@ -123,7 +125,12 @@ const GetInTouch = () => {
         <>
           {display && (
             <div>
-              <CardPopup close={() => setDisplay(false)} title={errMessage} />
+              <CardPopup
+                close={() => setDisplay(false)}
+                imageSRC={sentImg}
+                title="Successfully sent!"
+                buttonText="Great!"
+              />
             </div>
           )}
         </>

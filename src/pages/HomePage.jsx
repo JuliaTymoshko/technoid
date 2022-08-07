@@ -1,7 +1,7 @@
 import Carousel from './home/Carousel';
+import Sponsors from './home/Sponsors';
 import FeaturedItems from './home/FeaturedItems';
 import GetInTouch from './home/GetInTouch';
-import Sponsors from './home/Sponsors';
 
 const Home = () => {
   return (

@@ -1,28 +1,21 @@
 import './assets/styles/base/index.scss';
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
+
 import { lazy, Suspense } from 'react';
+import { Route, Routes } from 'react-router-dom';
+import { AuthProvider } from 'utils/context/AuthProvider';
+
 import LinearProgress from '@mui/material/LinearProgress';
 
+// Components
 import Header from './partials/Header';
 import Footer from './partials/Footer';
 import Profile from 'pages/ProfilePage';
-import { AuthProvider } from 'utils/context/AuthProvider';
-import { useAuth } from 'utils/hooks/useAuth';
-import Bonus from 'pages/BonusPage';
+import { RequireAuth } from 'utils/context/RequireAuth';
 
+// Lazy Components
 const Gallery = lazy(() => import('pages/GalleryPage'));
 const Home = lazy(() => import('./pages/HomePage'));
-
-function RequireAuth({ children }) {
-  let auth = useAuth();
-  let location = useLocation();
-
-  if (!auth.user) {
-    return <Navigate to="/profile" state={{ from: location }} replace />;
-  }
-
-  return children;
-}
+const Bonus = lazy(() => import('./pages/BonusPage'));
 
 const App = () => {
   return (
