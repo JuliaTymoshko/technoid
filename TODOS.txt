@@ -1,6 +1,4 @@
 
 - Page should have pagination (optional, adding infinite scroll is an added advantage)
 
-поудалять ненужные стейты у формика
 
-добавить readme
